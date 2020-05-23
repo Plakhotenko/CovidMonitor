@@ -1,8 +1,9 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import Header from './components/Header';
-import MainHeading from './components/MainHeading';
-import StatTabs from './components/StatisticsTabs'
+import React from "react";
+import { StyleSheet, View, Text } from "react-native";
+import Header from "./components/Header";
+import MainHeading from "./components/MainHeading";
+import StatTabs from "./components/StatisticsTabs";
+import DailyStatTabs from "./components/DailyStatTabs";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Header></Header>
       <MainHeading />
       <StatTabs />
+      <DailyStatTabs />
     </View>
   );
 }
@@ -17,6 +19,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#473f97'
+    backgroundColor: "#473f97",
   },
 });

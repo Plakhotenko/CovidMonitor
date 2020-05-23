@@ -1,21 +1,14 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View, Image } from "react-native";
 
 export default function NotificationsButton() {
   return (
     <View style={styles.notificationsButton}>
+      <Image source={require("../assets/bell.png")} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  notificationsButton: {
-    width: 18,
-    height: 20,
-    borderWidth: 2,
-    borderStyle: 'solid',
-    borderColor: '#fff',
-    borderTopLeftRadius: 50,
-    borderTopRightRadius: 50
-  },
+  notificationsButton: {},
 });

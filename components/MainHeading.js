@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React from "react";
+import { StyleSheet, View, Text } from "react-native";
 
 export default function MainHeading() {
   return (
@@ -15,6 +15,6 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20,
-    color: '#fff'
-  }
+    color: "white",
+  },
 });

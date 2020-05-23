@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View } from "react-native";
 
 export default function NavButton() {
   return (
@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
   line: {
     width: 22,
     height: 3,
-    backgroundColor: '#fff',
+    backgroundColor: "white",
     marginBottom: 4,
-    borderRadius: 4
-  }
+    borderRadius: 4,
+  },
 });

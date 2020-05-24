@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import MainHeading from "./components/MainHeading";
 import StatTabs from "./components/StatisticsTabs";
 import DailyStatTabs from "./components/DailyStatTabs";
+import StatInfo from "./components/StatInfo";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <MainHeading />
       <StatTabs />
       <DailyStatTabs />
+      <StatInfo />
     </View>
   );
 }

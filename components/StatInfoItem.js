@@ -1,39 +1,32 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import styled from "styled-components";
 
 export default function StatInfoItem(props) {
   return (
-    <View
-      style={[
-        styles.Item,
-        { backgroundColor: props.item.color },
-        { width: props.item.width === undefined ? "46%" : props.item.width },
-      ]}
-    >
-      <Text style={styles.ItemTitle}>{props.item.title}</Text>
-      <Text style={styles.ItemValue}>{props.item.value}</Text>
-    </View>
+    <Item color={props.item.color} width={props.item.width}>
+      <Title>{props.item.title}</Title>
+      <Value>{props.item.value}</Value>
+    </Item>
   );
 }
+const Item = styled.View`
+  justify-content: space-between;
+  width: ${(props) => (props.width ? props.width : "46%")};
+  margin: 2%;
+  height: 100px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: ${(props) => (props.color ? props.color : "#ffb259")};
+`;
 
-const styles = StyleSheet.create({
-  Item: {
-    justifyContent: "space-between",
-    width: "46%",
-    margin: "2%",
-    height: 100,
-    padding: 12,
-    borderRadius: 8,
-    backgroundColor: "#ffb259",
-  },
-  ItemTitle: {
-    color: "white",
-    fontSize: 14,
-    fontWeight: "700",
-  },
-  ItemValue: {
-    color: "white",
-    fontSize: 20,
-    fontWeight: "700",
-  },
-});
+const Title = styled.Text`
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+`;
+
+const Value = styled.Text`
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+`;

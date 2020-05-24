@@ -1,21 +1,20 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import styled from "styled-components";
 
 export default function MainHeading() {
   return (
-    <View style={styles.mainHeading}>
-      <Text style={styles.text}>Statistics</Text>
-    </View>
+    <MainHeadingBox>
+      <Statistics></Statistics>
+    </MainHeadingBox>
   );
 }
 
-const styles = StyleSheet.create({
-  mainHeading: {
-    paddingHorizontal: 25,
-  },
-  text: {
-    fontSize: 20,
-    color: "white",
-    fontWeight: "700",
-  },
-});
+const MainHeadingBox = styled.View`
+  padding: 0 25px;
+`;
+
+const Statistics = styled.View`
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+`;

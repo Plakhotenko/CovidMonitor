@@ -1,23 +1,19 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
 import NavButton from "./NavButton";
 import NotificationsButton from "./NotificationsButton";
+import styled from "styled-components/native";
 
 export default function Header() {
   return (
-    <View style={styles.header}>
+    <HeaderBox>
       <NavButton />
       <NotificationsButton />
-    </View>
+    </HeaderBox>
   );
 }
 
-const styles = StyleSheet.create({
-  header: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    paddingTop: 50,
-    paddingHorizontal: 25,
-    paddingBottom: 20,
-  },
-});
+const HeaderBox = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 25px 20px;
+`;

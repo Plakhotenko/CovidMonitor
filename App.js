@@ -1,26 +1,24 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
 import Header from "./components/Header";
 import MainHeading from "./components/MainHeading";
 import StatTabs from "./components/StatisticsTabs";
 import DailyStatTabs from "./components/DailyStatTabs";
 import StatInfo from "./components/StatInfo";
+import styled from "styled-components/native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Header></Header>
+    <Container>
+      <Header />
       <MainHeading />
       <StatTabs />
       <DailyStatTabs />
       <StatInfo />
-    </View>
+    </Container>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#473f97",
-  },
-});
+const Container = styled.View`
+  flex: 1;
+  background-color: #473f97;
+`;

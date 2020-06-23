@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function StatTabs() {
   return (
     <Wrapper>
-      <Item active>My Country</Item>
+      <Item active='true'>My Country</Item>
       <Item>Global</Item>
     </Wrapper>
   );
